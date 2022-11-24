@@ -19,23 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Lee Blog">
-<meta property="og:url" content="http://example.com/archives/2022/11/index.html">
+    <meta name="description" content="概率论的基础,概率空间.$ (\Omega,{F},{P})$ 从测度论的角度定义概率,抽象定义,属于概念性的东西,很重要 $ \Omega$ is the sample space, 表示所有可能的结果  set of all possible outcomes. 注意与$F$的不同,F是事件的集合,事 sample space的子集组成的集合. F的定义不是重复的,F的定义是为了在上面定义P,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Probability Space">
+<meta property="og:url" content="http://example.com/2022/11/24/learning-Probability-Space/index.html">
 <meta property="og:site_name" content="Lee Blog">
+<meta property="og:description" content="概率论的基础,概率空间.$ (\Omega,{F},{P})$ 从测度论的角度定义概率,抽象定义,属于概念性的东西,很重要 $ \Omega$ is the sample space, 表示所有可能的结果  set of all possible outcomes. 注意与$F$的不同,F是事件的集合,事 sample space的子集组成的集合. F的定义不是重复的,F的定义是为了在上面定义P,">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-24T12:19:32.000Z">
+<meta property="article:modified_time" content="2022-11-24T12:33:19.011Z">
 <meta property="article:author" content="LEEL">
+<meta property="article:tag" content="概率论">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2022/11/">
+<link rel="canonical" href="http://example.com/2022/11/24/learning-Probability-Space/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2022/11/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/11/24/learning-Probability-Space/","path":"2022/11/24/learning-Probability-Space/","title":"Probability Space"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Lee Blog</title>
+<title>Probability Space | Lee Blog</title>
   
 
 
@@ -66,7 +71,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Lee Blog</h1>
+      <p class="site-title">Lee Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -98,7 +103,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -111,6 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E8%AE%BA%E7%9A%84%E5%9F%BA%E7%A1%80-%E6%A6%82%E7%8E%87%E7%A9%BA%E9%97%B4"><span class="nav-number">1.</span> <span class="nav-text">概率论的基础,概率空间.</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,70 +168,148 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/24/learning-Probability-Space/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="LEEL">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lee Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Probability Space | Lee Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Probability Space
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="创建时间：2022-11-24 20:19:32 / 修改时间：20:33:19" itemprop="dateCreated datePublished" datetime="2022-11-24T20:19:32+08:00">2022-11-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2022/11/24/learning-Probability-Space/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/11/24/learning-Probability-Space/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>173</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="概率论的基础-概率空间"><a href="#概率论的基础-概率空间" class="headerlink" title="概率论的基础,概率空间."></a>概率论的基础,概率空间.</h2><p>$ (\Omega,{F},{P})$</p>
+<p>从测度论的角度定义概率,抽象定义,属于概念性的东西,很重要</p>
+<p>$ \Omega$ is the sample space, 表示所有可能的结果  set of all possible outcomes. 注意与$F$的不同,F是事件的集合,事 sample space的子集组成的集合.</p>
+<p>F的定义不是重复的,F的定义是为了在上面定义P, 概率函数,P是一个函数,给F中每一个事件一个概率(probaiblity). 有时也被称为测度函数 measure (只需要满足测度性质即可)</p>
+<p>还是看wiki吧 写的更好<br>Please refer to the wiki, it’s more clear.<br><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Probability_space#Definition">Probability Space wiki</a></p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Probability_measure">Probability Measure wiki</a></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-24T20:19:32+08:00"
-              content="2022-11-24">
-          11-24
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/24/learning-Probability-Space/" itemprop="url">
-            <span itemprop="name">Probability Space</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" rel="tag"># 概率论</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/11/24/bookReading/" rel="prev" title="韩松 <驱魔>">
+                  <i class="fa fa-chevron-left"></i> 韩松 <驱魔>
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-24T18:53:07+08:00"
-              content="2022-11-24">
-          11-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/24/bookReading/" itemprop="url">
-            <span itemprop="name">韩松 <驱魔></span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
-  
-  
-
 </div>
   </main>
 
